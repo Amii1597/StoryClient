@@ -1,0 +1,281 @@
+.navbar {
+    width: 93%;
+    height: 3.5rem;
+    background: #fff;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar p {
+    color: #000;
+    font-family: DM Sans, sans-serif;
+    font-size: 1.25rem;
+    width: fit-content;
+    font-weight: 600;
+    margin-left: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .navbar .buttons {
+    margin-right: -6rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar button:first-of-type {
+    border-radius: 1.25rem;
+    background: #ff7373;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.75rem;
+    margin-right: 0.75rem;
+  }
+  
+  .navbar button:nth-of-type(2) {
+    border-radius: 1.25rem;
+    background: #73abff;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+  
+  .navbar button:first-of-type:hover {
+    background: #73abff;
+    cursor: pointer;
+  }
+  
+  .navbar button:nth-of-type(2):hover {
+    background: #ff7373;
+    cursor: pointer;
+  }
+  
+  .navbar .buttons .addstory {
+    background: #ff7373;
+  }
+  .navbar .buttons .Logout {
+
+    border: none;
+    width: 1px;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 1.25rem;
+    padding: 0.75rem;
+  }
+  
+  .navbar .buttons .addstory:hover {
+    background: #73abff;
+  }
+ 
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    margin-left: 0.75rem;
+    cursor: pointer;
+  }
+ 
+  .hamburger {
+    scale: 0.4;
+    margin-left: -5rem;
+    cursor: pointer;
+  }
+  
+  .usercontrols {
+    position: absolute;
+    right: 0;
+    background: #fff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .usercontrols p {
+    margin-bottom: 7px;
+    font-weight: 600;
+  }
+  
+  .usercontrols button {
+    background: #ff7373;
+    border-radius: 1.25rem;
+    border: none;
+    padding: 0.75rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .usercontrols button:hover {
+    background: #73abff;
+  }
+  .mobile-menu-icon{
+    display: none;
+  }
+.avatar_heading{
+  display: none;
+}
+
+  @media screen  and (max-width:800px){
+    .hamburger{
+      display: none;
+    }
+    .con .buttons{
+     position:absolute;  
+ flex-direction: column;
+     transition: all 0.5s ease-in-out;
+   text-align: center;
+   width: 100%;
+   height: 200px;
+  top: -100px;
+    } 
+ .nav-links {
+  display: none;
+ }
+ 
+ .navbar {
+  height: 11.5rem;
+  position: relative;
+  left: 0;
+  top:-50px;
+  transition: all 0.5s ease-in-out;
+  width: 70%;
+}
+    .nav-links .buttons{
+      display: none;
+    }
+    .nav-links-mobile{
+      position: absolute;
+      box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px;
+      left: 0;
+      top: 200px;
+      transition: all 0.5s ease-in-out;
+      width: 100%;
+      height: 100px;
+      background-color:#fff;
+    }
+    /* .buttons {
+ 
+ flex-direction: column;
+     transition: all 0.5s ease-in-out;
+  margin: 20px;
+  padding: 20px;
+   text-align: center;
+   width: 100%;
+ 
+   }  */
+   .mobile-menu-icon{
+     position: absolute;
+     display: block;
+     right: 20px;
+     
+    }
+    .cross{
+     display: none;
+    }
+    .avatar {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 200px;
+      top: -120px;
+      margin-left: 0.75rem;
+      cursor: pointer;
+    }
+    .navbar .buttons .addstory {
+     width: 80px;
+     height: 20px;
+     position: absolute;
+ top: -95px;
+ left: 190px; 
+    background: #ff7373;
+    border-radius: 1.25rem;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 1px;
+    margin-right: 0.75rem;
+   }
+    .navbar .buttons .bookmarks {
+
+      width: 80px;
+      height: 20px;
+      position: absolute;
+  top: -70px;
+  left: 190px; 
+     background: #ff7373;
+     border-radius: 1.25rem;
+     border: none;
+     color: #fff;
+     font-size: 15px;
+     padding: 1px;
+     margin-right: 0.75rem;
+   }
+
+  .bars{
+    position: absolute;
+    left: -50px;
+  }
+  .rub{
+    position: absolute;
+    left: -50px;
+  }
+  .navbar .buttons .Logout {
+    width: 80px;
+     height: 20px;
+     position: absolute;
+ top: -45px;
+ left: 190px; 
+    background: #ff7373;
+    border-radius: 1.25rem;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 1px;
+    margin-right: 0.75rem;
+  }
+  .navbar .buttons .Logout:hover {
+    background: #73abff;
+  }
+  
+  .navbar button:first-of-type {
+    border-radius: 1.25rem;
+    background: #ff7373;
+    border: none;
+    color: #fff;
+    font-size: 10px;
+    padding: 1px;
+    margin: 1px;
+    width: 80px;
+    height: 20px;
+  }
+  
+  .navbar button:nth-of-type(2) {
+    width: 80px;
+    height: 20px;
+    border-radius: 1.25rem;
+    background: #73abff;
+    border: none;
+    color: #fff;
+    font-size: 10px;
+    padding: 1px;
+  }
+}
+@media screen  and (max-width:400px){
+ 
+  .navbar {
+
+    height: 11.5rem;
+    position: relative;
+    left: 0;
+    top:-50px;
+    transition: all 0.5s ease-in-out;
+    width: 90%;
+  
+  }
+}
